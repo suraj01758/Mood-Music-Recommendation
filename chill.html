@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chill Mood Songs</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    /* ★ Animated Lo-Fi Neon Gradient Background */
+    body {
+        min-height: 100vh;
+        padding: 40px;
+        text-align: center;
+        color: white;
+        background: linear-gradient(-45deg, #5f0a87, #a4508b, #1b1b2f, #16213e);
+        background-size: 400% 400%;
+        animation: gradientMove 12s ease infinite;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    @keyframes gradientMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    /* ★ Floating Lo-Fi Girl Decoration */
+    .lofi-girl {
+        position: fixed;
+        bottom: 0;
+        right: 10px;
+        width: 270px;
+        opacity: 0.85;
+        filter: drop-shadow(0 0 8px rgba(255,255,255,0.3));
+        pointer-events: none;
+    }
+
+    /* ★ Glassmorphism Container */
+    .container {
+        max-width: 650px;
+        margin: auto;
+        padding: 25px;
+        background: rgba(255, 255, 255, 0.07);
+        backdrop-filter: blur(10px);
+        border-radius: 18px;
+        box-shadow: 0 0 30px rgba(255,255,255,0.1);
+        animation: fadeIn 1.3s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 25px;
+        text-shadow: 0 0 15px rgba(255,255,255,0.4);
+    }
+
+    /* ★ Music Link Cards */
+    a.song {
+        display: block;
+        margin: 12px auto;
+        width: 85%;
+        padding: 15px;
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        background: rgba(255,255,255,0.12);
+        border-radius: 14px;
+        border: 1px solid rgba(255,255,255,0.2);
+        transition: 0.3s;
+        backdrop-filter: blur(6px);
+        box-shadow: 0 0 10px rgba(255,255,255,0.15);
+    }
+
+    a.song:hover {
+        background: rgba(255,255,255,0.25);
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(255,255,255,0.4);
+    }
+
+    /* ★ Back Button */
+    .back {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 25px;
+        background: #000;
+        opacity: 0.8;
+        border-radius: 10px;
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .back:hover {
+        opacity: 1;
+        transform: scale(1.06);
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>😌 Chill & Lo-Fi Vibes</h1>
+
+    <a class="song" href="https://www.youtube.com/watch?v=ktvTqknDobU" target="_blank">Imagine Dragons – Demons</a>
+    <a class="song" href="https://www.youtube.com/watch?v=JGwWNGJdvx8" target="_blank">Ed Sheeran – Shape of You</a>
+    <a class="song" href="https://www.youtube.com/watch?v=V1Pl8CzNzCw" target="_blank">Billie Eilish – Ocean Eyes</a>
+    <a class="song" href="https://youtube.com/playlist?list=PLUtf0PAkJEq97j345ueArP98ODawxw3iM&si=30qfjOxNjbKn9AWo" target="_blank">Amanraj Gill – Playlist</a>
+    <a class="song" href="https://youtube.com/playlist?list=PLUtf0PAkJEq97j345ueArP98ODawxw3iM&si=30qfjOxNjbKn9AWo" target="_blank">Diljit Dosanjh – Playlist</a>
+    <a class="song" href="https://youtube.com/playlist?list=RDEMlpgbIz-eU4e6VQDf9MKvDA&playnext=1&si=WBztevcaxjlSVPyz" target="_blank">Dhanda Nyoliwala – Playlist</a>
+    <a class="song" href="https://youtu.be/K8Dgpvoj0TY?si=cEcXfc9iucL2v9ma" target="_blank">Talwiinder – Playlist</a>
+    <a class="song" href="https://youtu.be/3OyJWjSO318?si=AVwtfwF7ZNJnqTiK" target="_blank">Ap Dhillon – Playlist</a>
+    <a class="song" href="https://youtu.be/rfRYqPno8vQ?si=rR7B4_nvxrs9rDcI" target="_blank">Shubh – Playlist</a>
+    <a class="song" href="https://youtu.be/lzDzmaVWCmY?si=kiLfdrttRb-JJJlb" target="_blank">Karan Aujila – Playlist</a>
+    <a class="song" href="https://youtu.be/QHmsBPb28BQ?si=yiFAywn6_mihHqKx" target="_blank">Sidhu Moosewla – Playlist</a>
+  
+    <br>
+    <a href="index.html" class="back">⬅ Back to Home</a>
+</div>
+
+<!-- ★ Lo-fi Girl Illustration -->
+<img src="https://i.imgur.com/cZSPCwP.png" class="lofi-girl">
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mood Music Recommendation</title>
+
+<style>
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    background: url("https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1400&q=80") no-repeat center/cover;
+  }
+
+  .overlay {
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.5);
+    backdrop-filter: blur(3px);
+  }
+
+  .container {
+    position:relative;
+    z-index:2;
+  }
+
+  h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    text-shadow:0 0 15px rgba(255,255,255,0.7);
+  }
+
+  .btn {
+    display:inline-block;
+    margin:10px;
+    padding:14px 30px;
+    background:rgba(255,255,255,0.2);
+    border:1px solid rgba(255,255,255,0.3);
+    border-radius: 14px;
+    backdrop-filter: blur(8px);
+    color:white;
+    font-size:20px;
+    text-decoration:none;
+    transition:0.3s;
+  }
+
+  .btn:hover {
+    background:rgba(255,255,255,0.4);
+    transform:scale(1.06);
+  }
+</style>
+
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="container">
+  <h1>🎵 Choose Your Music Mood 🎵</h1>
+
+  <a href="happy.html" class="btn">😊 Happy</a>
+  <a href="sad.html" class="btn">😢 Sad</a>
+  <a href="chill.html" class="btn">😌 Chill</a>
+  <a href="travel.html" class="btn">🚂 Travel</a>
+  
+  
+</div>
+
+</body>
+</html>

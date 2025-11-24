@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Traveling Mood Songs</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    /* ★ Animated  Neon Gradient Background */
+    body {
+        min-height: 100vh;
+        padding: 40px;
+        text-align: center;
+        color: white;
+        background: linear-gradient(-45deg, #5f0a87, #a4508b, #1b1b2f, #16213e);
+        background-size: 400% 400%;
+        animation: gradientMove 12s ease infinite;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    @keyframes gradientMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    /* ★ Floating Lo-Fi Girl Decoration */
+    .lofi-girl {
+        position: fixed;
+        bottom: 0;
+        right: 10px;
+        width: 270px;
+        opacity: 0.85;
+        filter: drop-shadow(0 0 8px rgba(255,255,255,0.3));
+        pointer-events: none;
+    }
+
+    /* ★ Glassmorphism Container */
+    .container {
+        max-width: 650px;
+        margin: auto;
+        padding: 25px;
+        background: rgba(255, 255, 255, 0.07);
+        backdrop-filter: blur(10px);
+        border-radius: 18px;
+        box-shadow: 0 0 30px rgba(255,255,255,0.1);
+        animation: fadeIn 1.3s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 25px;
+        text-shadow: 0 0 15px rgba(255,255,255,0.4);
+    }
+
+    /* ★ Music Link Cards */
+    a.song {
+        display: block;
+        margin: 12px auto;
+        width: 85%;
+        padding: 15px;
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        background: rgba(255,255,255,0.12);
+        border-radius: 14px;
+        border: 1px solid rgba(255,255,255,0.2);
+        transition: 0.3s;
+        backdrop-filter: blur(6px);
+        box-shadow: 0 0 10px rgba(255,255,255,0.15);
+    }
+
+    a.song:hover {
+        background: rgba(255,255,255,0.25);
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(255,255,255,0.4);
+    }
+
+    /* ★ Back Button */
+    .back {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 25px;
+        background: #000;
+        opacity: 0.8;
+        border-radius: 10px;
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .back:hover {
+        opacity: 1;
+        transform: scale(1.06);
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1> 🚂Traveling Vibes</h1>
+
+    <a class="song" href="https://youtu.be/bz2zY2NX_iY?si=CInjj2BOevD5PlJB" target="_blank">Playlist – 1</a>
+    <a class="song" href="https://youtu.be/RVNMqXhe88M?si=ugpQpg6gY45zX40R" target="_blank">Playlist – 2</a>
+    <a class="song" href="https://youtu.be/RVNMqXhe88M?si=ugpQpg6gY45zX40R" target="_blank">Playlist – 3</a>
+    
+  
+    <br>
+    <a href="index.html" class="back">⬅ Back to Home</a>
+</div>
+
+<!-- ★ Lo-fi Girl Illustration -->
+<img src="https://i.imgur.com/cZSPCwP.png" class="lofi-girl">
+
+</body>
+</html>
