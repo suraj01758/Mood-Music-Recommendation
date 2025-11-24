@@ -5,9 +5,6 @@ The design uses backgrounds, glassmorphism cards, gradient animations, Unsplash 
 
 🌐 Live Demo
 
-(Add your GitHub Pages link here once deployed)
-📌 Example: https://your-username.github.io/mood-music/
-
 📁 Project Structure
 ├── index.html       # Home page with mood selection
 ├── happy.html       # Happy mood music page
